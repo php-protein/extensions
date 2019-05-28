@@ -1,0 +1,20 @@
+{
+    "name": "protein/extenions",
+    "description": "Provides a way to extend static classes with new methods",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefano Azzolini",
+            "email": "lastguest@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "PSR-4": {
+            "Protein\\": "src/"
+        }
+    }
+}
