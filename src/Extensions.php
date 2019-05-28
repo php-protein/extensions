@@ -5,11 +5,11 @@
  *
  * Provides a way to extend static classes with new methods.
  *
- * @package Protein
+ * @package Proteins
  * @author  "Stefano Azzolini"  <lastguest@gmail.com>
  */
 
-namespace Protein;
+namespace Proteins;
 
 trait Extensions {
     protected static $__EXTENSIONS = [];

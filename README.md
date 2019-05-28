@@ -1,3 +1,5 @@
+<p align=center><img height=150 src="https://raw.githubusercontent.com/php-protein/docs/master/assets/protein-large.png"></p>
+
 # Protein | Extensions
 ## Provides a way to extend static classes with new methods
 
@@ -5,13 +7,13 @@
 ---
 
 ```
-composer require protein/extensions
+composer require proteins/extensions
 ```
 
 Include the trait in your classes via :
 
 ```php
-use Protein\Extensions;
+use Proteins\Extensions;
 
 class Test {
     use Extensions;
