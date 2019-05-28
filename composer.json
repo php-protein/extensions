@@ -1,5 +1,5 @@
 {
-    "name": "proteins/extenions",
+    "name": "proteins/extensions",
     "description": "Provides a way to extend static classes with new methods",
     "type": "library",
     "license": "MIT",
