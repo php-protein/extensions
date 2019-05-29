@@ -16,7 +16,7 @@ trait Extensions {
 
     final public function __call($name, $args) {
         if (isset(static::$__EXTENSIONS[$name]) && static::$__EXTENSIONS[$name] instanceof \Closure) {
-            return call_user_func_array(static::$__EXTENSIONS[$name]->bindTo($this, $this), $args);
+            return \call_user_func_array(static::$__EXTENSIONS[$name]->bindTo($this, $this), $args);
         } else {
             throw new \BadMethodCallException;
         }
@@ -24,7 +24,7 @@ trait Extensions {
 
     final public static function __callStatic($name, $args) {
         if (isset(static::$__EXTENSIONS[$name]) && static::$__EXTENSIONS[$name] instanceof \Closure) {
-            return forward_static_call_array(static::$__EXTENSIONS[$name], $args);
+            return \forward_static_call_array(static::$__EXTENSIONS[$name], $args);
         } else {
             throw new \BadMethodCallException;
         }
